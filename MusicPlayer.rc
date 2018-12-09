@@ -1,0 +1,205 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MusicPlayer.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MUSICPLAYER_DIALOG DIALOGEX 0, 0, 401, 275
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MusicPlayer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "播放",IDC_PLAY,14,243,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "停止",IDC_STOP,40,243,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_SHOW,"Static",SS_BLACKFRAME,15,29,253,171
+    CONTROL         "",IDC_SLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | TBS_ENABLESELRANGE,7,229,373,11
+    CONTROL         "",IDC_SLIDERVOLUME,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,120,247,47,9
+    PUSHBUTTON      "+",IDC_IMPORT,283,12,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    LISTBOX         IDC_LISTPLAY,283,29,96,170,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全屏",IDC_FULLSCREEN,174,243,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    LTEXT           "00 : 00 / 00 : 00",IDC_TIME,208,205,60,13
+    PUSHBUTTON      "加速",IDC_FAST,66,243,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "减速",IDC_SLOW,92,243,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "M",IDC_MODE,304,12,16,16,BS_BITMAP,WS_EX_DLGMODALFRAME
+    LTEXT           "准备就绪",IDC_STATE,16,205,60,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "cumtscy"
+            VALUE "FileDescription", "简易媒体播放器"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MusicPlayer.exe"
+            VALUE "LegalCopyright", "cumtscy保留所有权利"
+            VALUE "OriginalFilename", "MusicPlayer.exe"
+            VALUE "ProductName", "简易媒体播放器"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MUSICPLAYER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ADD                 BITMAP                  "res/Developer_Icons_002.bmp"
+IDB_MODE                BITMAP                  "res/Developer_Icons_003.bmp"
+IDB_PAUSE               BITMAP                  "res/bfzn_003.bmp"
+IDB_PLAY                BITMAP                  "res/bfzn_004.bmp"
+IDB_SLOW                BITMAP                  "res/bfzn_005.bmp"
+IDB_STOP                BITMAP                  "res/bfzn_006.bmp"
+IDB_FAST                BITMAP                  "res/bfzn_007.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUMODE MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "单曲播放",                        IDM_SINGLEPLAY
+        MENUITEM "单曲循环",                        IDM_SINGLELOOP
+        MENUITEM "顺序播放",                        IDM_ORDERPLAY
+        MENUITEM "循环播放",                        IDM_LOOPPLAY
+    END
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MusicPlayer.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
